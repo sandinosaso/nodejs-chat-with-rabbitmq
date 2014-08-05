@@ -1,4 +1,4 @@
-var host   = '192.168.0.82';
+var host   = 'localhost';//'192.168.0.82';
 var port   = '3000';
 var unreadMessagesCount = 0;
 

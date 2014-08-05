@@ -5,7 +5,7 @@ server = http.createServer(app),
 amqp = require('amqp'),
 path = require('path');
 
-var host = '192.168.0.82';//'localhost';//
+var host = 'localhost';//'192.168.0.82'
  
 app.use(express.static(path.join(__dirname, 'public')));
  
