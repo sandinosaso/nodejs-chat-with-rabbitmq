@@ -92,4 +92,4 @@ rabbitMqconnection.on('ready', function(){
     });
 });
 
-server.listen(3000,host);
+server.listen(process.env.OPENSHIFT_NODEJS_PORT || 3000,host);

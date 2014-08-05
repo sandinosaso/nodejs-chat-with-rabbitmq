@@ -1,5 +1,5 @@
 var host   = 'localhost';//'192.168.0.82';
-var port   = '3000';
+var port   =  process.env.OPENSHIFT_NODEJS_PORT || '3000';
 var unreadMessagesCount = 0;
 
 var socket = io.connect('http://'+host+':'+port);   
