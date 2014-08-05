@@ -8,5 +8,9 @@
         "jade": "latest",
         "amqp": "latest"
     },
-    "author": "sandino"
+    "author": "sandino",
+    
+    "scripts": {
+    "start": "node app.js --websocket-port=$OPENSHIFT_NODEJS_PORT --log-level=1"
+    }
 }
