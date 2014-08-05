@@ -24,7 +24,7 @@ app.get("/", function(req,res){
 var usuariosOnline = {};
  
 var io = require("socket.io").listen(server);
-var rabbitMqconnection = amqp.createConnection({host: 'localhost',  login: 'admin', password: 'admin'});
+var rabbitMqconnection = amqp.createConnection({host: host,  login: 'admin', password: 'admin'});
 
 rabbitMqconnection.on('ready', function(){
     rabbitMqconnection.queue('sencilla', {autoDelete: false}, function(cola){
