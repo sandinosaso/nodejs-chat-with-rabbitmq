@@ -1,10 +1,8 @@
-var host   = 'nodejschatwithrabbitmq-sandinosaso.rhcloud.com'//'localhost';//'192.168.0.82';
-var port   =  process.env.OPENSHIFT_NODEJS_PORT || '3000';
+var host   = '127.0.0.1';//'192.168.0.82';
+var port   =  '3000';
 var unreadMessagesCount = 0;
-port = '8000';
 
 var socket = io.connect('http://'+host+':'+port);   
-//var socket = io.connect("http://your-app-url.rhcloud.com:8000");
 //var socket = io.connect('http://192.168.0.82:3000');
  
 //al actualizar la página eliminamos la sesión del usuario de sessionStorage
